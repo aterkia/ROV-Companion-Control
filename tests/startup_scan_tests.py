@@ -140,7 +140,7 @@ case "$target" in 192.0.2.*) exit 0 ;; *) exit 1 ;; esac
                     assert "device=/dev/video0 ! image/jpeg,width=1280,height=720,framerate=24/1" in stream_args
                     assert "device=/dev/video2 ! image/jpeg,width=1280,height=720,framerate=30/1" in stream_args
                     assert stream_args.count("--master=") == 1
-                    assert "--streamrate=50" in stream_args
+                    assert "--streamrate" not in stream_args
                     assert "--out=udp:" + expected_ip + ":14550" in stream_args
                     assert "--out=udp:" + expected_ip + ":14552" in stream_args
                     if action == "manual":

@@ -122,7 +122,7 @@ Konfigurasi kompatibel dengan aplikasi Python sebelumnya dan tetap berada di `~/
 
 Path MAVProxy disimpan sebagai `mavproxy_path` di `~/.rov_control.json`, dengan
 default `mavproxy.py` dari `PATH`. Ubah melalui menu Edit lalu tekan `W` atau `S`
-untuk menyimpannya. MAVProxy dijalankan dengan `--streamrate=50`. Output GStreamer
+untuk menyimpannya. MAVProxy dijalankan tanpa argumen `--streamrate`. Output GStreamer
 dan MAVProxy tidak menulis langsung ke terminal; seluruh error dan diagnostic masuk
 ke panel log TUI.
 Pipeline CAM0 memakai 24 FPS, sedangkan CAM1 memakai 30 FPS.
